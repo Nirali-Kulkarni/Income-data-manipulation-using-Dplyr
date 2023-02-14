@@ -97,3 +97,13 @@ out
 
 
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/114110996/218859413-e4d6c3c4-75dd-4a4c-8dfd-830a3e256c3f.png">
+
+
+
+#left join
+df4=left_join(df1, df2, by = "ID")
+df4
+
+
+
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/114110996/218859911-559f6b0e-9772-403e-9ead-55f2b9926598.png">
