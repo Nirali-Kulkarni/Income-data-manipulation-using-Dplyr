@@ -63,3 +63,15 @@ dt
 
 
 <img width="390" alt="image" src="https://user-images.githubusercontent.com/114110996/218858810-46373cf7-a830-41b6-a0d7-6d862eca77a5.png">
+
+
+
+#State that generated highest income among the variable 'Index'
+out = mydata %>% group_by(Index) %>% filter(min_rank(desc(Y2015)) == 1) %>%
+  select(Index, State, Y2015)
+out
+
+
+
+
+<img width="486" alt="image" src="https://user-images.githubusercontent.com/114110996/218859413-e4d6c3c4-75dd-4a4c-8dfd-830a3e256c3f.png">
