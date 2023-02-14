@@ -33,6 +33,28 @@ summarise(mydata, Y2015_mean = mean(Y2015), Y2015_med=median(Y2015))
 
 
 
+#Joins
+df1 = data.frame(ID = c(1, 2, 3, 4, 5),
+                 w = c('a', 'b', 'c', 'd', 'e'),
+                 x = c(1, 1, 0, 0, 1),
+                 y=rnorm(5),
+                 z=letters[1:5])
+df2 = data.frame(ID = c(1, 7, 3, 6, 8),
+                 a = c('z', 'b', 'k', 'd', 'l'),
+                 b = c(1, 2, 3, 0, 4),
+                 c =rnorm(5),
+                 d =letters[2:6])
+#inner join
+
+df3 = inner_join(df1, df2, by = "ID")
+df3
+
+
+
+
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/114110996/218859703-3d47c7ae-9c66-48e2-82eb-6a14999abd0f.png">
+
+
 #number of records, mean and median for variables Y2005 and Y2006
 summarise_at(mydata, vars(Y2005, Y2006), list(~n(), ~mean(.), ~median(.)))
 
