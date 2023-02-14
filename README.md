@@ -16,6 +16,10 @@ mydata
 
 #returning random 3 rows
 sample_n(mydata,3)
+
+
+
+
 <img width="476" alt="image" src="https://user-images.githubusercontent.com/114110996/218856299-6f36fb20-5724-46f1-85fa-955d77138d28.png">
 
 
