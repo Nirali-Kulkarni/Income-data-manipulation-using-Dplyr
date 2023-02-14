@@ -40,3 +40,12 @@ summarise_at(mydata, vars(Y2005, Y2006), list(~n(), ~mean(.), ~median(.)))
 
 <img width="479" alt="image" src="https://user-images.githubusercontent.com/114110996/218857572-75961b9d-7061-45f8-b66f-f528e75e4647.png">
 
+
+
+#removing NA records from above summary
+summarise_at(mydata, vars(Y2011, Y2012),
+             list(~n(), missing = ~sum(is.na(.)), ~mean(., na.rm = TRUE),
+                  ~median(.,na.rm = TRUE)))
+                  
+                  
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/114110996/218858207-31a28ff1-3dcf-4411-89a2-b9d89d6b6b22.png">
