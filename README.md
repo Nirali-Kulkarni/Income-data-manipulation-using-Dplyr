@@ -49,3 +49,17 @@ summarise_at(mydata, vars(Y2011, Y2012),
                   
                   
 <img width="462" alt="image" src="https://user-images.githubusercontent.com/114110996/218858207-31a28ff1-3dcf-4411-89a2-b9d89d6b6b22.png">
+
+
+
+
+
+
+#10 random observations of two variables "Index" "State" 
+dt = mydata %>% select(Index, State) %>% sample_n(10)
+dt
+
+
+
+
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/114110996/218858810-46373cf7-a830-41b6-a0d7-6d862eca77a5.png">
