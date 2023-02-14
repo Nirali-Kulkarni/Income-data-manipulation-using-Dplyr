@@ -30,3 +30,13 @@ summarise(mydata, Y2015_mean = mean(Y2015), Y2015_med=median(Y2015))
 
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/114110996/218857124-e8d1c530-7d4a-418e-a6b1-4038a75e04f8.png">
+
+
+
+#number of records, mean and median for variables Y2005 and Y2006
+summarise_at(mydata, vars(Y2005, Y2006), list(~n(), ~mean(.), ~median(.)))
+
+
+
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/114110996/218857572-75961b9d-7061-45f8-b66f-f528e75e4647.png">
+
