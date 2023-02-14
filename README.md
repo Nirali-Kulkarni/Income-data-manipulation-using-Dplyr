@@ -24,6 +24,19 @@ sample_n(mydata,3)
 
 
 
+
+
+#records wherein column state contains 'Ar' in their name
+mydata12 = filter(mydata, grepl("Ar", State))
+mydata12
+
+
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/114110996/218860726-078e8385-f4e2-4975-abad-b1ee21764564.png">
+
+
+
+
+
 #calculating mean and median for the variable Y2015
 summarise(mydata, Y2015_mean = mean(Y2015), Y2015_med=median(Y2015))
 
